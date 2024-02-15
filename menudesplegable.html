@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitología Nórdica</title>
+    <style>
+        /* Estilos CSS */
+        
+        .dropdown-btn {
+            cursor: pointer;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mitología Nórdica</h1>
+    <!-- Botón del menú -->
+    <div class="dropdown">
+        <span class="dropdown-btn">&#9776;</span>
+        <!-- Contenido del menú desplegable -->
+        <div class="dropdown-content">
+            <a href="odin.html">Mas sobre Odin</a>
+            <a href="#mas-ragnar">Más sobre Ragnar Sons</a>
+            <a href="#mas-valhalla">Más sobre Valhalla</a>
+            <a href="#todo-vikingos">Todo sobre los vikingos</a>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div id="mitologia-nordica-content">
+        <h2>Mitología Nórdica</h2>
+        <p>La mitología nórdica es un conjunto de creencias y tradiciones compartidas por los pueblos germánicos del norte de Europa, incluidos los antiguos escandinavos. En esta rica tradición, los dioses, héroes y criaturas míticas desempeñan un papel
+            central en la cosmología y en las historias épicas transmitidas oralmente de generación en generación.</p>
+        <!-- Agregar más contenido aquí -->
+    </div>
+
+    <!-- JavaScript para manejar el menú desplegable -->
+    <script>
+        // Obtener el botón del menú y su contenido
+        const dropdownBtn = document.querySelector('.dropdown-btn');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        // Agregar evento de clic al botón del menú
+        dropdownBtn.addEventListener('click', function() {
+            // Alternar la visibilidad del contenido del menú
+            if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
+                dropdownContent.style.display = 'block';
+            } else {
+                dropdownContent.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
