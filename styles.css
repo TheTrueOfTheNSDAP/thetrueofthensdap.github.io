@@ -1,5 +1,85 @@
 /* Estilos CSS */
 
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('adolfo\ hitler.jpg');
+    background-size: cover;
+    /* Ajusta la imagen de fondo para cubrir toda la página */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    color: white;
+    /* Color de texto blanco para que sea legible sobre la imagen de fondo */
+    font-family: Arial, sans-serif;
+    /* Fuente predeterminada */
+    display: flex;
+    /* Usa un contenedor flex para centrar el contenido */
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */
+    min-height: 100vh;
+    /* Asegura que el cuerpo ocupe al menos todo el alto de la ventana */
+    flex-direction: column;
+    /* Coloca los elementos uno encima del otro */
+}
+
+#main-content {
+    position: relative;
+    /* Establece el contenido principal como relativo */
+    z-index: 1;
+    /* Asegura que el contenido principal esté sobre el fondo */
+    padding: 20px;
+    /* Agrega relleno para separar el contenido del borde */
+}
+
+header {
+    text-align: top;
+    margin: 20px;
+    /* Agrega margen exterior */
+    background-color: transparent;
+    /* Establece el fondo del encabezado a transparente */
+    padding: 0;
+    /* Elimina el relleno para que el encabezado se ajuste al texto */
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 20px;
+    background-color: transparent;
+    /* Establece el fondo del título a transparente */
+}
+
+footer {
+    position: relative;
+    z-index: 1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#background-video {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Estilo para el fondo */
+
+body::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Color de fondo con transparencia */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    /* Coloca el fondo detrás de todo el contenido */
+}
+
 body,
 html {
     font-family: Arial, sans-serif;

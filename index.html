@@ -9,29 +9,44 @@
 </head>
 
 <body>
+    <!-- Título principal -->
+    <h1 id="main-title">El Foro De Los Pensamientos</h1>
+
     <!-- Contenedor principal -->
     <div id="main-content">
-        <header>
-            <h1>Forumet for Tanker</h1>
-            <nav class="categorias">
-                <ul>
-                    <li><a href="categoria1.html" id="nazismo-link">Nacional Socialismo</a></li>
-                    <li><a href="categoria2.html" id="racismo-link">Racismo</a></li>
-                    <li><a href="categoria3.html" id="antisemitismo-link">Mitologia Nordica</a></li>
-                </ul>
-            </nav>
-        </header>
+        <nav class="categorias">
+            <ul>
+                <li><a href="categoria1.html" id="nazismo-link">Nacional Socialismo</a></li>
+                <li><a href="categoria2.html" id="racismo-link">Racismo</a></li>
+                <li><a href="categoria3.html" id="antisemitismo-link">Mitologia Nordica</a></li>
+            </ul>
+        </nav>
         <main>
             <!-- Contenido principal aquí -->
         </main>
-        <footer>
-            <p>&copy; 2024 Forum</p>
-            <img src="WL9005.jpg" alt="Fotografía Principal">
-        </footer>
     </div>
+
+    <footer>
+        <video id="background-video" src="adolf hitler talking.mp4" autoplay muted loop onclick="toggleMute()"></video>
+    </footer>
 
     <!-- Script para manejar la visibilidad de las categorías -->
     <script src="script.js"></script>
+
+    <script>
+        function toggleMute() {
+            var video = document.getElementById("background-video");
+            video.muted = !video.muted;
+        }
+
+        // Limitar la duración del video a 23.8 segundos
+        var video = document.getElementById("background-video");
+        video.addEventListener("timeupdate", function() {
+            if (this.currentTime >= 23.8) {
+                this.currentTime = 0;
+            }
+        });
+    </script>
 
 </body>
 
