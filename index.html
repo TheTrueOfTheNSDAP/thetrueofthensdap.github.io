@@ -6,6 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forumet for Tanker</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #home-icon {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+        }
+        /* Estilos para el menú desplegable */
+        
+        #menu-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 1;
+            /* Ajuste del z-index */
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+        }
+        
+        .categorias {
+            display: none;
+            /* Oculta el menú por defecto */
+            position: absolute;
+            top: 50px;
+            right: 0;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+        
+        .categorias.show {
+            display: block;
+        }
+        
+        .categorias ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .categorias ul li {
+            margin-bottom: 5px;
+        }
+        
+        .categorias ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .categorias ul li a:hover {
+            color: #666;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,13 +73,19 @@
 
     <!-- Contenedor principal -->
     <div id="main-content">
+        <!-- Nav con categorías -->
         <nav class="categorias">
             <ul>
+                <li><a href="https://git89.wordpress.com/" id="racismo-link">Publicaciones Diarias</a></li>
+                <li><a href="https://www.stormfront.org/forum/" id="antisemitismo-link">StormFront</a></li>
                 <li><a href="categoria1.html" id="nazismo-link">Nacional Socialismo</a></li>
-                <li><a href="categoria2.html" id="racismo-link">Racismo</a></li>
                 <li><a href="categoria3.html" id="antisemitismo-link">Mitologia Nordica</a></li>
             </ul>
         </nav>
+
+        <!-- Botón del menú desplegable -->
+        <div id="menu-toggle">&#9776; Categorías</div>
+
         <main>
             <!-- Contenido principal aquí -->
         </main>
@@ -31,9 +96,25 @@
     </footer>
 
     <!-- Script para manejar la visibilidad de las categorías -->
-    <script src="script.js"></script>
-
     <script>
+        // Obtiene el botón del menú y el menú desplegable
+        var menuToggle = document.getElementById('menu-toggle');
+        var categoriasMenu = document.querySelector('.categorias');
+
+        // Agrega evento de clic al botón del menú
+        menuToggle.addEventListener('click', function() {
+            // Alternar la clase 'show' para mostrar u ocultar el menú
+            categoriasMenu.classList.toggle('show');
+        });
+
+        // Cierra el menú si se hace clic fuera de él
+        window.addEventListener('click', function(event) {
+            if (!event.target.matches('#menu-toggle')) {
+                // Si el clic no fue en el botón del menú, oculta el menú
+                categoriasMenu.classList.remove('show');
+            }
+        });
+
         function toggleMute() {
             var video = document.getElementById("background-video");
             video.muted = !video.muted;

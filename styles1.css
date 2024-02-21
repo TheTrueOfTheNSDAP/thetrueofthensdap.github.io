@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c0c0c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    /* Tamaño grande para el título */
+    margin-bottom: 20px;
+    color: #ffcc00;
+    /* Color amarillo para el título */
+}
+
+.subtitle {
+    color: #999999;
+    /* Color gris claro para el subtítulo */
+}
+
+main {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    /* Tamaño grande para los títulos de sección */
+    color: #cccccc;
+    /* Color gris para los títulos de sección */
+    margin-top: 30px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li strong {
+    color: #ffcc00;
+    /* Color amarillo para los enlaces */
+}
+
+a {
+    color: #ffcc00;
+    /* Color amarillo para los enlaces */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff9900;
+    /* Cambio de color al hacer hover */
+}
+
+.footer-img {
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Añadir bordes redondeados a la imagen */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Agregar sombra */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
