@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de Música</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('16-9.jpg');
+        }
+        
+        .seccion {
+            padding: 20px;
+        }
+        
+        #botonmodos {
+            margin-top: 20px;
+        }
+        
+        #switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        
+        #switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+        
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+        
+        .slider.round {
+            border-radius: 34px;
+        }
+        
+        .slider.round:before {
+            border-radius: 50%;
+        }
+        
+        audio {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <header>
+        <h1>Sección de Música</h1>
+        <nav>
+
+        </nav>
+        
+
+
+        </div>
+        </div>
+    </header>
+
+    <section id="seccionMusica" class="seccion">
+        <!-- Zona en blanco con reproductor de música -->
+        <p>
+            <audio id="miMusica1" src="Unsere Fahne flattert uns voran - Napola, 2004.mp3"></audio>
+            <button onclick="reproducirMusica('miMusica1')">Vorwärts! Vorwärts!</button>
+            <button onclick="pauseMusica('miMusica1')">Pausar</button>
+        </p>
+        <p>
+            <!-- Segundo reproductor de música -->
+            <audio id="miMusica2" src="Soldatenlieder - Die Fahne hoch - Horst Wessel Lied - Version 07 (3m 13s).mp3"></audio>
+            <button onclick="reproducirMusica('miMusica2')">Horst Wessel Lied</button>
+            <button onclick="pauseMusica('miMusica2')">Pausar</button>
+        </p>
+           
+        <audio id="miMusica3" src="erika.mp3"></audio>
+            <button onclick="reproducirMusica('miMusica3')">German Soldier's Song - "Erika"</button>
+            <button onclick="pauseMusica('miMusica3')">Pausar</button>
+
+        </p>
+
+            <audio id="miMusica4" src="deutshcalinded.mp3"></audio>
+            <button onclick="reproducirMusica('miMusica4')">Deutschlandlied"</button>
+            <button onclick="pauseMusica('miMusica4')">Pausar</button>
+
+            </p>
+
+            <audio id="miMusica5" src="einheitsfrontlied.mp3"></audio>
+            <button onclick="reproducirMusica('miMusica5')">Einheitsfrontlied"</button>
+            <button onclick="pauseMusica('miMusica5')">Pausar</button>
+
+        </p>
+
+        <audio id="miMusica6" src="Es zittern die morschen Knochen.mp3"></audio>
+            <button onclick="reproducirMusica('miMusica6')">Es zittern die morschen Knochen"</button>
+            <button onclick="pauseMusica('miMusica6')">Pausar</button>
+
+        </p>
+
+        <audio id="miMusica7" src="die jugend marschiert.mp3"></audio>
+            <button onclick="reproducirMusica('miMusica7')">Die Jugend Marschiert"</button>
+            <button onclick="pauseMusica('miMusica7')">Pausar</button>
+
+        </p>
+
+        <audio id="miMusica8" src="sturm.mp3"></audio>
+            <button onclick="reproducirMusica('miMusica8')">Cancion Tormenta"</button>
+            <button onclick="pauseMusica('miMusica8')">Pausar</button>
+
+        </p>
+
+        <audio id="miMusica9" src="Wenn alle untreu werden.mp3"></audio>
+            <button onclick="reproducirMusica('miMusica9')">Wenn alle untreu werden"</button>
+            <button onclick="pauseMusica('miMusica9')">Pausar</button>
+
+        </p>
+
+        <audio id="miMusica10" src="Wenn alle untreu werden.mp3"></audio>
+            <button onclick="reproducirMusica('miMusica10')">Du bist die Welt für mich (Cancion Preferida Del Fhürer)"</button>
+            <button onclick="pauseMusica('miMusica10')">Pausar</button>
+
+            </section>
+
+    <script>
+        function reproducirMusica(id) {
+            var audio = document.getElementById(id);
+            audio.play();
+        }
+
+        function pauseMusica(id) {
+            var audio = document.getElementById(id);
+            audio.pause();
+        }
+    </script>
+
+    <h1>Si alguna musica tarda en ejecutarse solo espere un tiempo maximo de 10 segundos</h1>
+
+
+</body>
+
+</html>

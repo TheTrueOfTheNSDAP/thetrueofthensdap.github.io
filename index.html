@@ -77,9 +77,9 @@
         <nav class="categorias">
             <ul>
                 <li><a href="blanco.html" id="racismo-link">Blanco Y Su Concepto</a></li>
-                <li><a href="https://www.stormfront.org/forum/" id="antisemitismo-link">StormFront</a></li>
                 <li><a href="categoria1.html" id="nazismo-link">Nacional Socialismo</a></li>
                 <li><a href="categoria3.html" id="antisemitismo-link">Mitologia Nordica</a></li>
+                <li><a href="https://www.stormfront.org/forum/" id="antisemitismo-link">StormFront</a></li>
             </ul>
         </nav>
 
@@ -92,7 +92,8 @@
     </div>
 
     <footer>
-        <video id="background-video" src="adolf hitler talking.mp4" autoplay muted loop onclick="toggleMute()"></video>
+        <video id="background-video" src="Vorwärts, vorwärts, schmettern die hellen Fanfaren.mp4" autoplay muted loop onclick="toggleMute()" disableRemotePlayback></video>
+
     </footer>
 
     <!-- Script para manejar la visibilidad de las categorías -->
@@ -120,10 +121,10 @@
             video.muted = !video.muted;
         }
 
-        // Limitar la duración del video a 23.8 segundos
+        // Limitar la duración del video a 170.8 segundos
         var video = document.getElementById("background-video");
         video.addEventListener("timeupdate", function() {
-            if (this.currentTime >= 23.8) {
+            if (this.currentTime >= 170.8) {
                 this.currentTime = 0;
             }
         });
