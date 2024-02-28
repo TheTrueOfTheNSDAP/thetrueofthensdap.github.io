@@ -1,0 +1,49 @@
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('adolfo\ hitler.jpg'); /* Agrega la ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el contenedor principal */
+#main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los títulos */
+h1, h2, h3 {
+    color: #a3a1a1;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para los párrafos */
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Estilos para los enlaces dentro de párrafos */
+p a {
+    color: #007bff;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
