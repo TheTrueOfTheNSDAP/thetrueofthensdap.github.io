@@ -11,36 +11,45 @@
             margin: 0;
             padding: 0;
             background-image: url('Gross-A-Historian-Who-Fled-the-Nazis-Still-Wants-Us-Read-Hitler.webp');
+            background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir toda la pantalla */
+            background-position: center; /* Centra la imagen de fondo */
         }
-        
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el encabezado */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+        }
+
         .seccion {
             padding: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Para que los elementos se ajusten automáticamente a la línea siguiente */
+            justify-content: center; /* Centra los elementos horizontalmente */
         }
-        
+
         .imagenLibro {
             width: 200px;
             border: 1px solid #000000;
             margin: 10px;
-            display: inline-block;
+            text-align: center; /* Centra el contenido horizontalmente */
+            background-color: black; /* Fondo negro para cada libro */
+            padding: 10px;
         }
-        
+
         .imagenLibro img {
-            width: 100%;
+            max-width: 100%; /* Asegura que las imágenes no se salgan de su contenedor */
             height: auto;
-            display: block;
-        }
-        
-        .contenedorTexto {
-            text-align: center;
         }
 
         .nombreLibro {
-            color: white; /* Cambia el color del texto a blanco */
-        }
-
-        /* Cambia el color del texto del título a blanco */
-        header h1 {
-            color: white;
+            color: white; /* Color del texto del nombre del libro */
+            margin-top: 5px; /* Espacio adicional arriba del texto */
+            font-size: 14px; /* Tamaño de fuente del nombre del libro */
         }
     </style>
 </head>
@@ -54,7 +63,7 @@
         <!-- Zona en blanco con recuadros para imágenes y nombres -->
         <div class="imagenLibro">
             <div class="contenedorImagen">
-                <a href="https://editorialkamerad.files.wordpress.com/2014/01/murieron-realmente-6-millones.pdf" target="_blank" rel="noopener noreferrer"><img src="harwood-murieron-realmente-6-millones.jpg" alt="Libro 1"></a>
+                <a href="Richard Harwood - Murieron Realmente 6 millones.pdf" target="_blank" rel="noopener noreferrer"><img src="harwood-murieron-realmente-6-millones.jpg" alt="Libro 1"></a>
             </div>
             <div class="contenedorTexto">
                 <div class="nombreLibro">¿Murieron realmente 6 millones?</div>
@@ -67,20 +76,43 @@
         </div>
 
         <div class="imagenLibro">
-            <a href="https://archive.org/details/discursos-adolf-hitler-1920-1945-version-final" target="_blank" rel="noopener noreferrer"><img src="discursoshitler.jpg" alt="Libro 2"></a>
-            <div class="nombreLibro">Discursos Hitler</div>
+            <a href="Adolf Hitler - Discursos 1920-1945 Versión Final.pdf" target="_blank" rel="noopener noreferrer"><img src="discursoshitler.jpg" alt="Libro 2"></a>
+            <div class="nombreLibro">Adolf Hitler-Discursos 1920-1945</div>
         </div>
         <div class="imagenLibro">
-            <a href="https://ia800601.us.archive.org/23/items/NationalSocialistCollectionOfSources/NSDAP-%20Gottfried%20Feder.pdf" target="_blank" rel="noopener noreferrer"><img src="elprogramansdap.jpg" alt=""></a>
-            <div class="nombreLibro">El Programa NSDAP</div>
+            <a href="Gottfried_Feder_El_Programa_del_NSDAP_y_sus_concepciones_doctrinarias.pdf" target="_blank" rel="noopener noreferrer"><img src="1927-el-programa-nacionalsocialista.-y-sus-concepciones-doctrinarias-ideologicas-espanhol" alt=""></a>
+            <div class="nombreLibro">El Programa del NSDAP y sus concepciones doctrinarias</div>
+        </div>
+        <div class="imagenLibro">
+            <a href="https://archive.org/details/25PointsOfTheNSDAP/mode/2up" target="_blank" rel="noopener noreferrer"><img src="das.jpg" alt=""></a>
+            <div class="nombreLibro">Los 25 Puntos Del NSDAP</div>
+        </div>
+        <div class="imagenLibro">
+            <a href="Gottfried_Feder_Manifiesto_contra_la_usura_y_la_servidumbre_del.pdf" target="_blank" rel="noopener noreferrer"><img src="Manifiesto-contra-la-usura-1.jpg" alt=""></a>
+            <div class="nombreLibro">Manifiesto contra
+                la usura y la
+                servidumbre del
+                interés del dinero</div>
+        </div>
+        <div class="imagenLibro">
+            <a href="Henry Ford - El Judio Internacional.pdf" target="_blank" rel="noopener noreferrer"><img src="eljudiointernacional.jpg" alt=""></a>
+            <div class="nombreLibro">El Judio Internacional</div>
+        </div>
+        <div class="imagenLibro">
+            <a href="Los Protocolos de los Sabios de Sión.pdf" target="_blank" rel="noopener noreferrer"><img src="protocolos.jpg" alt=""></a>
+            <div class="nombreLibro">Los Protocolos De Los Sabios De Sión</div>
         </div>
         <div class="imagenLibro">
             <a href="https://es.wikipedia.org/wiki/Anton_Drexler" target="_blank" rel="noopener noreferrer"><img src="midespertarpolitico.jpg" alt=""></a>
             <div class="nombreLibro">Mi Despertar Politico Anton Drexler</div>
         </div>
         <div class="imagenLibro">
-            <a href="https://archive.org/details/informe-leuchter-fin-de-una-mentira-camaras-de-gas-holocausto-judio" target="_blank" rel="noopener noreferrer"><img src="informeleutcher.jpg" alt=""></a>
-            <div class="nombreLibro">El Informe Leuchter</div>
+            <a href="El Primer Informe Leuchter.pdf" target="_blank" rel="noopener noreferrer"><img src="primerleuchter.webp" alt=""></a>
+            <div class="nombreLibro">El Primer Informe Leuchter</div>
+        </div>
+        <div class="imagenLibro">
+            <a href="El segundo informe Leuchter.pdf" target="_blank" rel="noopener noreferrer"><img src="seleu.jpg" alt=""></a>
+            <div class="nombreLibro">El Segundo Informe Leuchter</div>
         </div>
         <div class="imagenLibro">
             <a href="https://archive.org/details/judaisminmusicot0000wagn/page/436/mode/2up" target="_blank" rel="noopener noreferrer"><img src="judaismomusical.webp" alt=""></a>
@@ -89,6 +121,10 @@
         <div class="imagenLibro">
             <a href="https://archive.org/details/sobre-los-judios-y-sus-mentiras-martin-lutero/page/20/mode/2up" target="_blank" rel="noopener noreferrer"><img src="losjudiosysusmentiras.jpg" alt=""></a>
             <div class="nombreLibro">Los Judios y sus mentiras</div>
+        </div>
+        <div class="imagenLibro">
+            <a href="El Holocausto al Banquillo - Jürgen Graf.pdf" target="_blank" rel="noopener noreferrer"><img src="mini_magick20190112-17299-pzvvha.png" alt=""></a>
+            <div class="nombreLibro">El Holocausto Al Banquillo</div>
         </div>
         <div class="imagenLibro">
             <a href="https://archive.org/details/crowdastudypopu00bongoog/mode/2up" target="_blank" rel="noopener noreferrer"><img src="lamachedumbre.jpg" alt=""></a>
