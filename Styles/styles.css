@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('adolfo\ hitler.jpg');
+    background-image: url('../Imagenes/adolfo\ hitler.jpg');
     background-size: cover;
     /* Ajusta la imagen de fondo para cubrir toda la página */
     background-position: center;
